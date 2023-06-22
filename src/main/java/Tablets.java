@@ -12,7 +12,13 @@ public class Tablets extends ObjTec{
         this.resolucion_pantalla = resolucion_pantalla;
     }
 
+    public String getAccesorio() {
+        return accesorio;
+    }
 
+    public void setAccesorio(String accesorio) {
+        this.accesorio = accesorio;
+    }
 
     public Tablets(String marca, String RAM, String almacenamiento, String procesador, String modelo, int year, int precio, int stock, String resolucion_pantalla, String accesorio) {
         super(marca, RAM, almacenamiento, procesador, modelo, year, precio, stock);

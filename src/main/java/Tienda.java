@@ -77,7 +77,7 @@ public class Tienda {
         int precio = sc.nextInt();
         System.out.println("Ingrese stock");
         int stock = sc.nextInt();
-        System.out.println("Ingrese la resolucion de pantalla");
+        System.out.println("Ingrese el teclado asociado");
         String resolucion_pantalla = sc.next();
         System.out.println("Ingrese un accesorio");
         String accesorio = sc.next();
@@ -88,7 +88,7 @@ public class Tienda {
 
     private void agregarNotebook() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingreso de Tablets");
+        System.out.println("Ingreso de Notebooks");
         System.out.println("Ingrese marca");
         String marca = sc.next();
         System.out.println("Ingrese RAM");
@@ -105,13 +105,47 @@ public class Tienda {
         int precio = sc.nextInt();
         System.out.println("Ingrese stock");
         int stock = sc.nextInt();
-        System.out.println("Ingrese la resolucion de pantalla");
+        System.out.println("Ingrese el teclado asociado");
+        String teclado = sc.next();
+        System.out.println("Ingrese la bateria (mAh)");
+        String bateria = sc.next();
+        System.out.println("Ingrese la resolucion de la panatalla");
         String resolucion_pantalla = sc.next();
-        System.out.println("Ingrese un accesorio");
-        String accesorio = sc.next();
 
-        Notebook notebook = new Notebook(marca, RAM, almacenamiento, procesador, modelo, year, precio, stock, resolucion_pantalla, accesorio);
-        catalogo_tablets.add(notebook);
+        Notebook notebook = new Notebook(marca, RAM, almacenamiento, procesador, modelo, year, precio, stock, teclado, bateria,resolucion_pantalla );
+        catalogo_notebooks.add(notebook);
+    }
+
+    private void agregarComputador() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingreso de Computadores");
+        System.out.println("Ingrese marca");
+        String marca = sc.next();
+        System.out.println("Ingrese RAM");
+        String RAM = sc.next();
+        System.out.println("Ingrese almacenamiento");
+        String almacenamiento = sc.next();
+        System.out.println("Ingrese procesador");
+        String procesador = sc.next();
+        System.out.println("Ingrese modelo");
+        String modelo = sc.next();
+        System.out.println("Ingrese año");
+        int year = sc.nextInt();
+        System.out.println("Ingrese precio");
+        int precio = sc.nextInt();
+        System.out.println("Ingrese stock");
+        int stock = sc.nextInt();
+        System.out.println("Ingrese la tarjeta de video");
+        String tarj_video = sc.next();
+        System.out.println("Ingrese la fuente de poder");
+        String fuente_poder = sc.next();
+        System.out.println("Ingrese el chasis");
+        String chasis = sc.next();
+        System.out.println("Ingrese los componentes de la pantalla(marca, modelo, año)");
+        Pantalla pantalla = new Pantalla(sc.next(), sc.next(),sc.nextInt());
+
+        Computador computador = new Computador(marca, RAM, almacenamiento, procesador, modelo, year, precio, stock, tarj_video, fuente_poder, chasis, pantalla);
+        catalogo_computador.add(computador);
     }
 
 

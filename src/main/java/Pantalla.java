@@ -26,4 +26,10 @@ public class Pantalla {
     public void setYear(int year) {
         this.year = year;
     }
+
+    public Pantalla(String marca, String modelo, int year) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.year = year;
+    }
 }

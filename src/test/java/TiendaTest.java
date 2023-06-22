@@ -6,6 +6,10 @@ class TiendaTest {
 
     @Test
     void agregarClientes() {
+        Tienda tienda = new Tienda();
+        Cliente cliente = new Cliente("luis", "contreras", "luis@ufro.cl", "634939489", "soltero", "temuco");
+
+
 
     }
 }
