@@ -35,4 +35,12 @@ public class Computador extends ObjTec{
     public void setPantalla(Pantalla pantalla) {
         this.pantalla = pantalla;
     }
+
+    public Computador(String marca, String RAM, String alamcenamiento, String procesador, String modelo, int year, int precio, int stock, String tarj_video, String fuente_poder, String chasis, Pantalla pantalla) {
+        super(marca, RAM, alamcenamiento, procesador, modelo, year, precio, stock);
+        this.tarj_video = tarj_video;
+        this.fuente_poder = fuente_poder;
+        this.chasis = chasis;
+        this.pantalla = pantalla;
+    }
 }

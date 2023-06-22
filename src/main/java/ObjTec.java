@@ -71,4 +71,15 @@ public class ObjTec {
     public void setStock(int stock) {
         this.stock = stock;
     }
+
+    public ObjTec(String marca, String RAM, String alamcenamiento, String procesador, String modelo, int year, int precio, int stock) {
+        this.marca = marca;
+        this.RAM = RAM;
+        this.alamcenamiento = alamcenamiento;
+        this.procesador = procesador;
+        this.modelo = modelo;
+        this.year = year;
+        this.precio = precio;
+        this.stock = stock;
+    }
 }

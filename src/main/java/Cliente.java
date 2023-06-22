@@ -2,7 +2,7 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private String correo;
-    private int telefono;
+    private String telefono;
     private String estado_civil;
     private String ciudad;
 
@@ -18,7 +18,7 @@ public class Cliente {
         return correo;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
@@ -42,7 +42,7 @@ public class Cliente {
         this.correo = correo;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -51,6 +51,15 @@ public class Cliente {
     }
 
     public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public Cliente(String nombre, String apellido, String correo, String telefono, String estado_civil, String ciudad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.estado_civil = estado_civil;
         this.ciudad = ciudad;
     }
 }
